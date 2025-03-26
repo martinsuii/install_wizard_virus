@@ -21,3 +21,6 @@ chmod +x setup.sh
  Explanation:
  self destruct means Is the script supposed to delete itself after usage with its config?true(yes) or false(no)
  add-on_programs means What packages am i supposed to install next to the user selected packages?
+ ## To do list
+ - [ ] Run a .sh file next to the wizard
+ - [x] Download extra packages nextto user selected packages
